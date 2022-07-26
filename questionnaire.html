@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&family=Roboto:ital,wght@0,300;0, 500, 700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Опитування</h2>
+    <form id="quest" action="#" method="get">
+        <fieldset class="Data">
+            <legend >Дані</legend>
+            <div>
+                <p class="title">Імʼя та Прізвище</p>
+                <input required type="text" placeholder="Введіть імʼя">
+            </div>
+            <div>
+                <p class="title">Email</p>
+                <p><input required type="email" placeholder="Введіть Email" autocomplete="off" pattern="([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"></p>
+            </div>
+            <div>
+                <p class="title">Пароль</p>
+                <p><input required type="password" placeholder="Введіть пароль" autocomplete="off" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}"></p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="title2">Оцінювальні питання</legend>
+            <div>
+                <p class="title2">1. Що вам подобається у нашому новому продукті?</p>
+                <p><input type="textarea" placeholder="Введіть відповідь" spellcheck="false" maxlength="500"></p>
+            </div>
+            <div>
+                <p class="title2">2. Які зміни мигли б на вашу думку покращити наш продукт?</p>
+                <p><input type="textarea" placeholder="Введіть відповідь" spellcheck="false" maxlength="500"></p>
+            </div>
+            <div>
+                <p class="title2">3. Що вам найбільше подобається в аналогах конкурентів?</p>
+                <p><input type="textarea" placeholder="Введіть відповідь" spellcheck="false" maxlength="500"></p>
+            </div>
+            <div>
+                <p class="title2">4. Якби ми зараз запустили наш новий продукт на ринку, за якою ймовірністю Ви б користувалися ним охочіше, ніж існуючими подібними продуктами конкурентів?</p>
+                <p><input class="radio" type="radio" name="percent" value="">100%</p>
+                <p><input class="radio" type="radio" name="percent" value="">60-99%</p>
+                <p><input class="radio" type="radio" name="percent" value="">40-59%</p>
+                <p><input class="radio" type="radio" name="percent" value="">1-39%</p>
+            </div>
+            <div>
+                <p class="title2">5. Що могло б підвищити Ваш інтерес до нашого нового продукту?</p>
+                <p><input type="textarea" placeholder="Введіть відповідь" spellcheck="false" maxlength="200"></p>
+            </div>
+            <div>
+
+                <p class="title2">6. Наскільки важливим для Вас є комфорт при виборі між аналогічними продуктами?</p>
+                <p><input class="radio" type="radio" name="important" value="max"><span>Максимально важливий</span></p>
+                <p><input class="radio" type="radio" name="important" value="znacno">Значно</p>
+                <p><input class="radio" type="radio" name="important" value="napevno">Напевно важливий</p>
+                <p><input class="radio" type="radio" name="important" value="not">Неважливо</p>
+            </div>
+            <div>
+                <p class="title2">7. Які зміни могли б, на Вашу думку, покращити нашу нову послугу?</p>
+                <p><input type="textarea" placeholder="Введіть відповідь" spellcheck="false" maxlength="200"></p>
+            </div>
+            <div>
+                <p class="title2">8. Яким було Ваше загальне враження від використання нашої нової послуги?</p>
+                <select name="otsinka">
+                    <option value="neitralne">Нейтральне</option>
+                    <option selected value="pozytyvne">Позитивне</option>
+                    <option value="nehatyvne">Негативне</option>
+                </select>
+            </div>
+            <div>
+                <p class="title2">9. Які зміни найбільше сподобались у нашому новому продукті?</p>
+                <p><input class="checkbox" type="checkbox" name="dyzain" value="yes"> Дизайн</p>
+                <p><input class="checkbox" type="checkbox" name="interfeis" value="yes"> Інтрефейс</p>
+                <p><input class="checkbox" type="checkbox" name="functions" value="yes"> Нові функції</p>
+            </div>
+            <div>
+                <p class="title2">10. Що могло б підвищити Ваш інтерес до нашої нової послуги?</p>
+                <p><input type="textarea" placeholder="Введіть відповідь" spellcheck="false" maxlength="200"></p>
+            </div>
+            <div>
+                <p class="title2">11. Якщо Ви не вважаєте за ймовірне, що Ви б користувалися нашою новою послугою, напишіть, будь ласка, чому?</p>
+                <p><input type="textarea" placeholder="Введіть відповідь" spellcheck="false" maxlength="200"></p>
+            </div>
+            <div>
+                <p class="title2">12. Які зміни могли б, на Вашу думку, ще покращити існуючі послуги конкурентів?</p>
+                <p><input type="textarea" placeholder="Введіть відповідь" spellcheck="false" maxlength="200"></p>
+            </div>
+            <div>
+                <p class="title2">13. Що Вам найбільше подобається в існуючих послугах конкурентів?</p>
+                <p><input type="textarea" placeholder="Введіть відповідь" spellcheck="false" maxlength="200"></p>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend class="title">Запитання про технічний аспект</legend>
+            <div>
+                <label  class="title2" for="myBrowser">14. У якому браузері найчастіше переглядаєте наш сайт?</label>
+                <div>
+                    <input list="browsers" id="myBrowser" name="myBrowser" placeholder="Виберіть"/>
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Internet Explorer">
+                        <option value="Opera">
+                        <option value="Safari">
+                        <option value="Microsoft Edge">
+                    </datalist>
+                </div>
+            </div>
+
+            <div>
+                <label  class="title2" for="os">15. Яку операційну систему використовуєте?</label>
+                <div>
+                    <input list="opSys" id="os" name="opSys" placeholder="Виберіть"/>
+                    <datalist id="opSys">
+                        <option selected value="iOS">
+                        <option value="Andriod">
+                        <option value="HarmonyOS">
+                    </datalist>
+                </div>
+            </div>
+        </fieldset>
+
+
+        <div class="buttons">
+            <button class="btn" type="submit">Надіслати</button>
+            <button class="btn" type="reset">Очистити</button>
+        </div>
+
+    </form>
+
+    <progress value="32" max="100"></progress>
+
+
+</body>
+    <script src="script.js"></script>
+</html>

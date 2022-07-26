@@ -1,0 +1,118 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 15px;
+    color: #8a8a8a;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+h2{
+    padding-left: 30px;
+    font-weight: normal;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+.form{
+    width: 800px;
+    height: auto;
+}
+
+fieldset{
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+
+datalist{
+    margin-top: 15px;
+}
+
+
+
+select{
+    width: 15%;
+    padding: 10px 5px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    border: 1px solid cornflowerblue;
+}
+select:focus{
+    outline: none;
+}
+
+input{
+    width: 25%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 3px;
+}
+
+input:focus{
+   outline: none;
+    border: 1px solid black;
+}
+
+.Data input:valid{
+   border: 2px solid #0f9c0f;
+}
+
+.Data input:invalid{
+    border: 2px solid red;
+}
+
+.title{
+    margin-bottom: 7px;
+}
+
+.title2{
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 30%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0f9c0f;
+    color: white;
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+.btn:hover{
+    background-color: #10aee7;
+}
+
+.radio, .checkbox{
+    height: auto;
+    width: auto;
+    padding-left: 15px;
+}
