@@ -21,7 +21,7 @@
             </div>
             <div>
                 <p><label for="password1">Пароль</label></p>
-                <input class="inputArea" id="password1" type="password" maxlength="100">
+                <input class="inputArea" id="password1" type="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}">
             </div>
             <div id="chb1">
                 <input  id="checkbox1" type="checkbox" checked><span>Запамʼятати мене</span>
@@ -30,6 +30,23 @@
                 <button id="submit1" type="submit">Відправити</button>
             </div>
         </form>
+    </div>
+</div>
+
+<div id="form2">
+    <div id="header2">
+        <h2 id="title2">Вхід на сайт</h2>
+    </div>
+    <div class="inputArea2">
+<!--        <p><label class="label2" for="email2">Email</label></p>-->
+        <input id="email2" type="email" placeholder="Email" pattern="([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+    </div>
+    <div class="inputArea2">
+<!--        <p><label class="label2" for="password2">Пароль</label></p>-->
+        <input id="password2" type="password" placeholder="Пароль" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}">
+    </div>
+    <div>
+        <button id="submit2" type="submit">Вхід</button>
     </div>
 </div>
 

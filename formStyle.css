@@ -2,6 +2,7 @@ body{
     margin: 15px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 p, span, a, h1, h2, h3, h4, h5, h5, h7, hr{
@@ -20,7 +21,10 @@ p, span, a, h1, h2, h3, h4, h5, h5, h7, hr{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 40px;
 }
+
 form{
     display: flex;
     flex-direction: column;
@@ -92,3 +96,80 @@ label{
 #chb1{
     margin-bottom: 15px;
 }
+
+/*///////////////Form2*/
+#form2{
+    width: 320px;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    border: 5px solid #79ace5;
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+
+#form2 input{
+    width: 100%;
+    padding: 10px 6px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid dodgerblue;
+
+    margin-bottom: 30px;
+}
+
+#form2 input:focus{
+    border-bottom: 2px solid red;
+    font-size: 14px;
+}
+
+#form2 input:focus .label2{
+    color: red;
+}
+
+#header2{
+    height: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-image: url("bg/CirAndTri.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#title2{
+    font-weight: normal;
+    color: dodgerblue;
+    padding-top: 40px;
+}
+
+.label2{
+    text-transform: none;
+    color: white;
+}
+
+.inputArea2{
+    text-align: left;
+}
+
+
+#submit2{
+    width: 100%;
+    height: 40px;
+    background-color: dodgerblue;
+    font-size: 16px;
+    color: white;
+    border: none;
+
+    margin-top: 30px;
+}
+
+#submit2:hover{
+    background-color: red;
+}
+
+
+
